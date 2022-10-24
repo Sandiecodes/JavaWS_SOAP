@@ -4,9 +4,7 @@ import client.HelloWorldImplService;
  
 public class client {
  
-    /**
-     * @author Arpit Mandliya
-     */
+
     public static void main(String[] args) {
        
         HelloWorldImplService helloWorldService = new HelloWorldImplService();
