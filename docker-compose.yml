@@ -1,0 +1,23 @@
+version: "3.9"
+services:
+  serverJava:
+    container_name: serverJava
+    image: openjdk:8-jdk
+    ports:
+    - "8080:8080"
+    command: ["bin/bash"]
+    volumes:
+    - ./server:/server
+    stdin_open: true
+    tty: true
+  clientJava_1:
+    container_name: clientJava_1
+    image: openjdk:8-jdk
+    ports:
+    - "8081:80"
+    command: ["bin/bash"]
+    volumes:
+    - ./client:/client
+    stdin_open: true
+    tty: true
+  
